@@ -1,4 +1,4 @@
-//import { headerAppender } from "./header"
+import { headerAppender } from "./header"
 import axios from 'axios'
 
 const Card = (article) => {
@@ -58,6 +58,20 @@ const cardAppender = (selector) => {
   // Create a card from each and every article object in the response, using the Card component.
   // Append each card to the element in the DOM that matches the selector passed to the function.
   //
+  const entryPoint = document.querySelector('.cards-container')
+  axios.get('http://localhost:5000/api/articles')
+  .then(res => {
+    console.log(res.data)
+    const newCard = Tabs(res.data)
+    console.log(newCard)
+    return newCard
+  })
+  .then(newCard => {
+    entryPoint.appendChild(newTopic)
+  })
+  .catch(err => console.group(err.message))
+  .finally(() => console.log('done'))
 }
+
 
 export { Card, cardAppender }
