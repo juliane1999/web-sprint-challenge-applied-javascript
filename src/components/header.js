@@ -42,9 +42,7 @@ const headerAppender = (selector) => {
   // It should append the header to the element in the DOM that matches the given selector.
   //
 
-const headContainer = document.querySelector('.header-container')
 
-document.body.headDiv.appendChild(headContainer)
 
 
 }

@@ -1,4 +1,4 @@
-import { headerAppender } from "./header"
+//import { headerAppender } from "./header"
 
 const Card = (article) => {
   // TASK 5
@@ -32,7 +32,7 @@ const Card = (article) => {
   authorDiv.classList.add('author')
   imgDiv.classList.add('img-container')
 
-  headlineDiv.textContent = '' 
+  headlineDiv.textContent = ''
   img.src = '' 
   span.textContent = 'By ' 
 
