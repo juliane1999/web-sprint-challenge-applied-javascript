@@ -1,4 +1,3 @@
-
 const Header = (title, date, temp) => {
   // TASK 1
   // ---------------------
@@ -12,6 +11,7 @@ const Header = (title, date, temp) => {
   //    <span class="temp">{ temp }</span>
   //  </div>
   //
+
   const headDiv = document.createElement('div')
   const spanDate = document.createElement('span')
   const h1Title = document.createElement('h1')
@@ -42,8 +42,10 @@ const headerAppender = (selector) => {
   // It should append the header to the element in the DOM that matches the given selector.
   //
 
-
-
+    const makeHeader = Header(title,date,temp)
+    const headContainer = document.querySelector('.header-container')
+    headContainer.appendChild(makeHeader)
+    return headContainer
 
 }
 
