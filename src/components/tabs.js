@@ -18,9 +18,9 @@ const Tabs = (topics) => {
   const bootDiv = document.createElement('div')
   const techDiv = document.createElement('div')
 
-  jsDiv.textContent = 'javascript'
-  bootDiv.textContent = 'bootstrap'
-  techDiv.textContent = 'technology'
+  jsDiv.textContent = topics[0]
+  bootDiv.textContent = topics[1]
+  techDiv.textContent = topics[2]
 
   topicDiv.appendChild(jsDiv)
   topicDiv.appendChild(bootDiv)

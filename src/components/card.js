@@ -39,11 +39,12 @@ const Card = (article) => {
   cardDiv.appendChild(headlineDiv)
   cardDiv.appendChild(authorDiv)
   authorDiv.appendChild(imgDiv)
+  imgDiv.appendChild(img)
   authorDiv.appendChild(span)
 
-  cardDiv.addEventListener('click', () => {
-    headlineDiv.classList.toggle('headline')
-  })
+  //cardDiv.addEventListener('click', () => {
+    //console.log(headline)
+  //})
     return cardDiv;
 }
 

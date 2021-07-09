@@ -44,11 +44,8 @@ const headerAppender = (selector) => {
 
 const headContainer = document.querySelector('.header-container')
 
-const headAppend = document.createElement('header')
-headAppend.appendChild(Header)
-headContainer.appendChild(headAppend)
+document.body.headDiv.appendChild(headContainer)
 
-return headContainer;
 
 }
 
