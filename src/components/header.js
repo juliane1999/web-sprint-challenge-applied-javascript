@@ -13,6 +13,8 @@ const Header = (title, date, temp) => {
   //
 }
 
+const head = document.querySelector('.header-container')
+
 const headerAppender = (selector) => {
   // TASK 2
   // ---------------------
