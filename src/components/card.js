@@ -32,9 +32,9 @@ const Card = (article) => {
   authorDiv.classList.add('author')
   imgDiv.classList.add('img-container')
 
-  headlineDiv.textContent = `${headline}`
-  img.src = `${authorPhoto}`
-  span.textContent = `By ${authorName}`
+  headlineDiv.textContent = '' 
+  img.src = '' 
+  span.textContent = 'By ' 
 
   cardDiv.appendChild(headlineDiv)
   cardDiv.appendChild(authorDiv)
