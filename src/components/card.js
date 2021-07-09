@@ -1,4 +1,5 @@
 //import { headerAppender } from "./header"
+import axios from 'axios'
 
 const Card = (article) => {
   // TASK 5
@@ -32,9 +33,9 @@ const Card = (article) => {
   authorDiv.classList.add('author')
   imgDiv.classList.add('img-container')
 
-  headlineDiv.textContent = ''
-  img.src = '' 
-  span.textContent = 'By ' 
+  headlineDiv.textContent =  article.headline
+  img.src = article.authorPhoto
+  span.textContent = article.authorName
 
   cardDiv.appendChild(headlineDiv)
   cardDiv.appendChild(authorDiv)
