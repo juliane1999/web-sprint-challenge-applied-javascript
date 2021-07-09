@@ -11,9 +11,13 @@ const Header = (title, date, temp) => {
   //    <span class="temp">{ temp }</span>
   //  </div>
   //
+  const headDiv = document.createElement('div')
+  const spanDate = document.createElement('span')
+  const h1Title = document.createElement('h1')
+  const spanTemp = document.createElement('span')
 }
 
-const head = document.querySelector('.header-container')
+
 
 const headerAppender = (selector) => {
   // TASK 2
