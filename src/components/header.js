@@ -1,3 +1,4 @@
+
 const Header = (title, date, temp) => {
   // TASK 1
   // ---------------------
@@ -15,6 +16,20 @@ const Header = (title, date, temp) => {
   const spanDate = document.createElement('span')
   const h1Title = document.createElement('h1')
   const spanTemp = document.createElement('span')
+
+  spanDate.textContent = `${date}`
+  h1Title.textContent = `${title}`
+  spanTemp.textContent = `${temp}`
+
+  headDiv.appendChild(spanDate)
+  headDiv.appendChild(h1Title)
+  headDiv.appendChild(spanTemp)
+
+  headDiv.classList.add('header')
+  spanDate.classList.add('date')
+  spanTemp.classList.add('temp')
+  
+    return headDiv;
 }
 
 
