@@ -1,3 +1,5 @@
+import { headerAppender } from "./header"
+
 const Card = (article) => {
   // TASK 5
   // ---------------------
@@ -17,6 +19,32 @@ const Card = (article) => {
   //   </div>
   // </div>
   //
+
+  const cardDiv = document.createElement('div')
+  const headlineDiv = document.createElement('div')
+  const authorDiv = document.createElement('div')
+  const imgDiv = document.createElement('div')
+  const img = document.createElement('img')
+  const span = document.createElement('span')
+
+  cardDiv.classList.add('card')
+  headlineDiv.classList.add('headline')
+  authorDiv.classList.add('author')
+  imgDiv.classList.add('img-container')
+
+  headlineDiv.textContent = `${headline}`
+  img.src = `${authorPhoto}`
+  span.textContent = `By ${authorName}`
+
+  cardDiv.appendChild(headlineDiv)
+  cardDiv.appendChild(authorDiv)
+  authorDiv.appendChild(imgDiv)
+  authorDiv.appendChild(span)
+
+  cardDiv.addEventListener('click', () => {
+    headlineDiv.classList.toggle('headline')
+  })
+    return cardDiv;
 }
 
 const cardAppender = (selector) => {
